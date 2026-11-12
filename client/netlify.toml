@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# lets /overlay and other pages load directly
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
